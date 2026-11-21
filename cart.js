@@ -3,7 +3,7 @@ function calculateTotal(cart) {
     let total = 0;
 
     for (const item of cart) {
-        total += item.price;
+        total += item.price * item.quantity;
     }
 
     return total;
